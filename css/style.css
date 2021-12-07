@@ -1,0 +1,15 @@
+body {
+  background-color: rgb(66, 52, 42);
+}
+a {
+  display: block;
+  text-align: center;
+  color: blue;
+  
+}
+
+li {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
