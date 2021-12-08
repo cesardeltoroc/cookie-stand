@@ -2,7 +2,7 @@
 
 let hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 
-let section 
+let table = table.getElementById('Cookies');
 
 function CookieSalesOne(name, min, max, avgSale) {
   this.name = name;
@@ -19,7 +19,6 @@ CookieSalesOne.prototype.getRandomCookies = function () {
   // console.log(oneHour);
   return oneHour;
 };
-
 CookieSalesOne.prototype.calcCookiesEachHour = function () {
   for (let i = 0; i < hours.length; i++) {
     let cookies = this.getRandomCookies();
@@ -28,6 +27,12 @@ CookieSalesOne.prototype.calcCookiesEachHour = function () {
     // console.log(this.calcCookiesEachHour);
   }
 };
+CookieSalesOne.prototype.getRandomCust = function (){
+  return Math.floor(Math.random() * (this.max - this.min) + +this.min);
+};
+
+
+//List
 CookieSalesOne.prototype.render = function () {
   for (let i = 0; i < hours.length; i++) {
     let li = document.createElement('li');
@@ -39,17 +44,18 @@ CookieSalesOne.prototype.render = function () {
   li.textContent= `Total ${this.dailyTotal}`;
 };
 
-CookieSalesOne.prototype.getRandomCust = function (){
-  return Math.floor(Math.random() * (this.max - this.min) + +this.min);
-};
 
 
 let seattle = new CookieSalesOne('Seattle', 23, 65, 6.4);
 let tokyo = new CookieSalesOne('Tokyo', 3,34, 1.2);
+let dubai = new CookieSalesOne('Dubai', 11, 38, 3.7);
+let paris = new CookieSalesOne('Paris', 20, 38, 2.3);
+let lima = new CookieSalesOne('Lima', 2, 16, 4.6);
 
 seattle.getRandomCookies();
 seattle.calcCookiesEachHour();
 seattle.render();
+
 
 
 //Seattle
