@@ -12,5 +12,10 @@ a {
   font-size: 1.5em;
 }
 table {
-  display: block;
+  border: 1px solid black;
+}
+
+td, th {
+  border: 3px solid rgb(35, 23, 77);
+  padding: 10px;
 }
