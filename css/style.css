@@ -26,9 +26,11 @@ header li {
   margin-left: 110px;
   list-style-type: none;
   text-decoration: none;
-}
-header a:hover {
-  color:yellow;
+  color: whitesmoke;
+  margin-top: 7px;
+  margin-left: 8.5em;
+  font-size: large;
+  font-weight: 900;
 }
 header {
 height: 30px;
@@ -37,12 +39,6 @@ height: 30px;
  width: 1200px;
  margin-left: 40px;
 
-}
-header a {
-  color: white;
-  list-style-type: none;
-  text-decoration: none;
-  margin-top: 3px;
 }
 section img:first-child{
   margin-left: 40px;
@@ -62,4 +58,41 @@ footer a {
 
 footer a:hover {
   color:yellow;
+}
+
+#Seattle {
+  margin-left: 20px;
+  background-color: rgb(50, 151, 121);
+  width: 250px;
+  list-style-type: none;
+  border-radius: 5px;
+  margin-left: 70px;
+  margin-top: 10px;
+}
+
+#Seattle li {
+  list-style-type: none;
+  text-align: center;
+}
+#Stores h2 {
+  font-weight: 900;
+  text-align: center;
+}
+#Stores h3 {
+  font-weight: 900;
+  text-align: center;
+}
+#Stores h4 {
+  font-weight: 900;
+  text-align: center;
+}
+#Tokyo {
+  margin-left: 20px;
+  background-color: rgb(50, 151, 121);
+  width: 250px;
+  list-style-type: none;
+  border-radius: 5px;
+  margin-left: 70px;
+  margin-top: 10px;
+  float: right;
 }
