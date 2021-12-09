@@ -5,6 +5,8 @@ h1 {
   text-align: center;
   color: black;
   font-size: 2em;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 6em;
 }
 a { 
   display:block;
@@ -18,4 +20,46 @@ table {
 td, th {
   border: 3px solid rgb(35, 23, 77);
   padding: 10px;
+}
+header li {
+  display: inline-flex;
+  margin-left: 110px;
+  list-style-type: none;
+  text-decoration: none;
+}
+header a:hover {
+  color:yellow;
+}
+header {
+height: 30px;
+ background-color: black;
+ border-radius: 50px;
+ width: 1200px;
+ margin-left: 40px;
+
+}
+header a {
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+  margin-top: 3px;
+}
+section img:first-child{
+  margin-left: 40px;
+}
+section img {
+  margin-top: 30px;
+}
+footer a {
+  background-color: black;
+  width: max-content;
+  margin: auto;
+  padding: 10px;
+  border-radius: 5px;
+  color:white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color:yellow;
 }
