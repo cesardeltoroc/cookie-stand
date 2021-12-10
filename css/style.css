@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(109, 133, 168);
+  background-color: rgb(100, 82, 139);
 }
 h1 {
   text-align: center;
@@ -42,7 +42,7 @@ height: 30px;
  border-radius: 50px;
  width: 1200px;
  margin-left: 40px;
-
+margin-bottom: 0px;
 }
 section img:first-child{
   margin-left: 40px;
@@ -58,15 +58,20 @@ footer a {
   border-radius: 5px;
   color:white;
   text-decoration: none;
+  margin-top: 10px;
 }
 
 footer a:hover {
   color:rgb(255, 0, 0);
 }
+footer {
+  text-align: right;
+  font-weight: 900;
+}
 /* Seattle */
 #Seattle {
   margin-left: 20px;
-  background-color: rgb(84, 88, 76);
+  background-color: rgb(44, 57, 112);
   width: 300px;
   list-style-type: none;
   border-radius: 5px;
@@ -74,6 +79,8 @@ footer a:hover {
   margin-top: 10px;
   height: 150px;
   line-height: 21px;
+  margin: auto;
+  float: left;
 }
 
 #Seattle li {
@@ -86,11 +93,15 @@ footer a:hover {
   text-align: center;
   text-decoration: underline;
 }
+section#Seattle {
+  margin-top: 20px;
+  
+}
 
 /* Tokyo */
 #Tokyo {
   margin-left: 20px;
-  background-color: rgb(84, 88, 76);
+  background-color: rgb(44, 57, 112);
   width: 300px;
   list-style-type: none;
   border-radius: 5px;
@@ -99,16 +110,20 @@ footer a:hover {
   border-radius: 2px;
   height: 150px;
   line-height: 21px;
+  margin: auto;
+  float: left;
 }
 #Tokyo li {
   list-style-type: none;
   text-align: center;
 }
 
+  
+
 /* Dubai */
 #Dubai {
   margin-left: 20px;
-  background-color: rgb(84, 88, 76);
+  background-color: rgb(44, 57, 112);
   width: 300px;
   list-style-type: none;
   border-radius: 5px;
@@ -117,6 +132,8 @@ footer a:hover {
   border-radius: 2px;
   height: 150px;
   line-height: 21px;
+  margin: auto;
+  float: left;
 }
 #Dubai li {
   list-style-type: none;
@@ -126,7 +143,7 @@ footer a:hover {
 /* Paris */
 #Paris {
   margin-left: 20px;
-  background-color: rgb(84, 88, 76);
+  background-color: rgb(44, 57, 112);
   width: 300px;
   list-style-type: none;
   border-radius: 5px;
@@ -135,6 +152,8 @@ footer a:hover {
   border-radius: 2px;
   height: 150px;
   line-height: 21px;
+  margin: auto;
+  float: left;
 }
 #Paris li {
   list-style-type: none;
@@ -145,15 +164,18 @@ footer a:hover {
 
 #Lima {
   margin-left: 20px;
-  background-color: rgb(84, 88, 76);
+  background-color: rgb(44, 57, 112);
   width: 300px;
   list-style-type: none;
   border-radius: 5px;
   margin-top: 10px;
   margin-left: 70px;
   border-radius: 2px;
-  height: 170px;
+  height: 150px;
   line-height: 21px;
+  margin: auto;
+  float: left;
+  color: rgb(0, 0, 0);
 }
 #Lima li {
   list-style-type: none;
@@ -184,3 +206,61 @@ button {
   float: left;
 }
 
+.Shirt {
+  float: right;
+}
+section.images {
+  display:list-item;
+
+}
+#Large {
+  display: inline;
+  margin-left: 200px;
+}
+main.p {
+  float:right;
+}
+p {
+  color: rgb(0, 0, 0);
+  border: 2px inset black;
+  width: 450px;;
+  height:300px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  overflow: scroll;
+  margin-right: 500px;
+  background: rgb(180, 164, 192);
+}
+#Merch {
+  margin-right: 53px;
+}
+.Large {
+  margin-right: 200px;
+  text-align: center;
+  position:relative;
+}
+.Sales {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+  margin-left: 30px;
+  margin-top: 15px;
+  border: solid 2px black;
+  background-color: black;
+  border-radius: 7px;
+}
+div. .Sales {
+  text-decoration: none;
+  color: 
+  whitesmoke;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: burlywood;
+}
