@@ -152,10 +152,35 @@ footer a:hover {
   margin-top: 10px;
   margin-left: 70px;
   border-radius: 2px;
-  height: 150px;
+  height: 170px;
   line-height: 21px;
 }
 #Lima li {
   list-style-type: none;
   text-align: center;
 }
+
+/* Field */
+form {
+  height: 170px;
+  text-align: center;
+  border: 2px solid black;
+  margin-top: 10px;
+}
+ label {
+  color: rgb(20, 20, 20);
+  float: left;
+}
+input {
+  float: left;
+}
+
+legend {
+  text-decoration: underline;
+  text-align: left;
+  font-weight: 900;
+}
+button {
+  float: left;
+}
+

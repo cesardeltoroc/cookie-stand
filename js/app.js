@@ -11,6 +11,7 @@ function CookieSalesOne(name, min, max, avgSale) {
   this.avgSale = avgSale;
   this.cookiesEachHour = [];
   this.dailyTotal = 0;
+  this.hourlyTotal = 0;
 }
 
 CookieSalesOne.prototype.getRandomCookies = function () {
@@ -46,10 +47,12 @@ CookieSalesOne.prototype.render = function () {
   td.textContent = this.dailyTotal;
   tr.appendChild(td);
   table.appendChild(tr);
+
 };
 let thead = document.getElementById('Head');
 let tr = document.createElement('tr');
 tr.textContent = '.';
+
 
 function ours() {
   for (let i = 0; i < hours.length; i++) {
@@ -62,6 +65,27 @@ function ours() {
   tr.appendChild(td);
 }
 ours();
+
+const locationSales = document.getElementById('form');
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let name = event.target.fname.value;
+  let maxCust = event.target.maxcust.value;
+  // console.log(MaxCust);
+  let minCust = event.target.mincust.value;
+  // console.log(MinCust);
+  let avgCookie = event.target.avgsale.value;
+  // console.log(AvgCookie);
+  let newStore = new CookieSalesOne(name, maxCust, minCust, avgCookie);
+  newStore.getRandomCookies();
+  newStore.calcCookiesEachHour();
+  newStore.render();
+}
+
+locationSales.addEventListener('submit',handleSubmit);
+
+
 
 // tr.textContent = hours;
 thead.appendChild(tr);
