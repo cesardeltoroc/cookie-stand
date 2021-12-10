@@ -87,15 +87,15 @@ function handleSubmit(event) {
 
 locationSales.addEventListener('submit',handleSubmit);
 
-function footer() {
-  let arr = [];
-  for (let i = 0; i < hourlyTotal.length; i++ ){
-    let hourlyTotal = 0;
-    for ( j = 0; j < allStores.length; i++ ){
-      hourlyTotal += allStores[j].cookiesEachHour[i];
-    }
-  }
-}
+// function footer() {
+//   let arr = [];
+//   for (let i = 0; i < hourlyTotal.length; i++ ){
+//     let hourlyTotal = 0;
+//     for ( j = 0; j < allStores.length; i++ ){
+//       hourlyTotal += allStores[j].cookiesEachHour[i];
+//     }
+//   }
+// }
 // footer();
 
 // tr.textContent = hours;
