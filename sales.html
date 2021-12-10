@@ -12,6 +12,24 @@
     <a href="index.html">Home</a>
   </header>
   <main>
+    <form id="form">
+      <fieldset>
+        <legend>Location</legend>
+        <label for="fname">Store Location:</label>
+        <input type="text" id="fname" name="fname" required>
+      </fieldset>
+      <fieldset>
+        <legend>Min,Max Customers and AVG Sales:</legend>
+        <label for="maxcust">Max Customers:</label>
+        <input type="number" id="maxcust" name="maxcust" required>
+        <label for="mincust">Min Customers:</label>
+        <input type="number" id="mincust" name="mincust" required>
+        <label for="avgsale">Average Sales:</label>
+        <input type="number" step="0.1" id="avgsale" name="avgsale" required>
+      </fieldset>
+      <button type='Submit'>Sumbit</button>
+    </form>
+
     <section id='TableOne'>
       <table id='Table'>
         <thead id='Head'></thead>
@@ -19,24 +37,6 @@
       </table>
     </section>
     
-    <form id="form">
-      <fieldset>
-        <legend>Location</legend>
-        <label for="fname">Store Location:</label>
-        <input type="text" id="fname" name="fname">
-      </fieldset>
-      <fieldset>
-        <legend>Min,Max Customers and AVG Sales:</legend>
-        <label for="maxcust">Max Customers:</label>
-        <input type="number" id="maxcust" name="maxcust">
-        <label for="mincust">Min Customers:</label>
-        <input type="number" id="mincust" name="mincust">
-        <label for="avgsale">Average Sales:</label>
-        <input type="number" id="avgsale" name="avgsale">
-      </fieldset>
-      <button type='Submit'>Sumbit</button>
-    </form>
-
   </main>
 </body>
 <footer> </footer>

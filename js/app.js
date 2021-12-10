@@ -4,6 +4,8 @@ let hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '
 
 let section = document.getElementById('TableOne');
 
+let allStores = [];
+
 function CookieSalesOne(name, min, max, avgSale) {
   this.name = name;
   this.min = min;
@@ -11,7 +13,7 @@ function CookieSalesOne(name, min, max, avgSale) {
   this.avgSale = avgSale;
   this.cookiesEachHour = [];
   this.dailyTotal = 0;
-  this.hourlyTotal = 0;
+  allStores.push(this);
 }
 
 CookieSalesOne.prototype.getRandomCookies = function () {
@@ -85,7 +87,16 @@ function handleSubmit(event) {
 
 locationSales.addEventListener('submit',handleSubmit);
 
-
+function footer() {
+  let arr = [];
+  for (let i = 0; i < hourlyTotal.length; i++ ){
+    let hourlyTotal = 0;
+    for ( j = 0; j < allStores.length; i++ ){
+      hourlyTotal += allStores[j].cookiesEachHour[i];
+    }
+  }
+}
+// footer();
 
 // tr.textContent = hours;
 thead.appendChild(tr);
